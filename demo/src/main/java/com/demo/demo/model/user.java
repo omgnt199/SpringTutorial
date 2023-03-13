@@ -6,7 +6,7 @@ import jakarta.persistence.Entity;
 public class user {
     private String name;
     private String id;
-
+    private String age;
     public user(){
 
     }
@@ -16,11 +16,17 @@ public class user {
     public String getName() {
         return name;
     }
+    public String getAge() {
+        return age;
+    }
     public void setId(String id) {
         this.id = id;
     }
     public void setName(String name) {
         this.name = name;
+    }
+    public void setAge(String age) {
+        this.age = age;
     }
 
     @Override
